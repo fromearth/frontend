@@ -1,0 +1,46 @@
+/**
+ * スペース空け方いろいろ
+ *
+ * @filename space.txt
+ * @category Html
+ * @package  HtmlSpace
+ * @author   fromearth
+ * @link     https://github.com/fromearth
+ */
+
+[概要]
+HTML表示において、連続した半角スペースは1つ分に集約されて表示されるため、
+それ以上のスペースを空けたい場合などは、別の方法を考える必要がある。
+
+
+・半角スペース1つ分
+  半角スペースのほか、ブランク文字（改行、タブ）でも空けられる。
+
+
+・マルチバイト文字を使う方法
+  全角スペースを使って空けられる
+
+
+・文字実体参照を使う方法
+  &thinsp;    // &nbsp; より狭い
+  &nbsp;      // 通常の半角スペースに相当
+  &ensp;      // &nbsp; より少し広め
+  &emsp;      // さらに広め
+
+
+・段落の行頭スペースはcssで
+  text-indent: 1em;   /* 1文字分空ける */
+
+
+・文字間スペースはcssで
+  letter-spacing: 0.2pt;
+
+
+・単語間スペースはcssで
+  word-spacing: 1em;
+
+
+・連続した半角スペースを、そのまま表示させる方法
+  <pre>タグで囲むかcssを使う
+
+  white-space: {pre|pre-wrap}

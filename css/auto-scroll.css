@@ -1,0 +1,16 @@
+/**
+ * 表示領域は固定で、はみ出し部分を自動スクロールさせる
+ *
+ * @filename auto-scroll.css
+ * @category Css
+ * @package  CssAutoScroll
+ * @author   fromearth
+ * @link     https://github.com/fromearth
+ */
+
+
+.auto-scroll-area {
+    white-space: pre;
+    text-wrap: none;
+    overflow: auto;
+}

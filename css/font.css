@@ -1,0 +1,39 @@
+/**
+ * 読みやすいフォント設定
+ *
+ * @filename font.css
+ * @category Css
+ * @package  CssFont
+ * @author   fromearth
+ * @link     https://github.com/fromearth
+ */
+
+
+/* 全体設定 */
+body, th, td {
+    /**
+     * font-size: 80%
+     * line-height: 1.6 は行間を広めにとる設定
+     * font-family: Verdana は画面表示させたときの読みやすさを意識して開発されたフォントなので優先
+     */
+    font: 80%/1.6 Verdana, Arial, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+th {
+    /* テーブルヘッダは行間を狭くする */
+    line-height: 1.2;
+}
+
+td {
+    /* セル内は、少し行間を狭くする */
+    line-height: 1.4;
+}
+
+
+
+/* 等幅フォントを使いたい部分 / @see <code>タグ */
+.typewriter {
+    font-family: Consolas, 'Courier New', Courier, Monaco, monospace;
+    letter-spacing: 0.2pt;   /* 文字間スペース調整 */
+    line-height: 1.2;        /* 行間は狭く */
+}

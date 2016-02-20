@@ -1,0 +1,18 @@
+/**
+ * 複数の外部cssファイルを、まとめて呼び出すためのファイル記述
+ *
+ * @filename import.css
+ * @category Css
+ * @package  CssImport
+ * @author   fromearth
+ * @link     https://github.com/fromearth
+ */
+
+
+/* どの文字エンコーディングが使われているか、ブラウザに教える */
+@charset "utf-8";
+
+/* 外部cssファイルを、まとめて呼び出す */
+@import url(foo.css);
+@import url(bar.css);
+@import url(baz.css);

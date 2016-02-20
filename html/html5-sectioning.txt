@@ -1,0 +1,154 @@
+/**
+ * HTML5セクショニングまとめ
+ *
+ * @filename html5-sectioning.txt
+ * @category Html
+ * @package  HtmlHtml5Sectioning
+ * @author   fromearth
+ * @link     https://github.com/fromearth
+ */
+
+
+/**
+ * ページ内に１つの記事があるだけ（項目分けが無い記事）
+ * @example
+ */
+<body>
+    <h1>ページ見出し</h1>
+    <p>
+        記事内容
+    </p>
+</body>
+
+
+/**
+ * 上記と同じ、ページ内に１つの記事があるだけで articleで包んだだけ
+ * @example
+ */
+<body>
+    <article>
+        <!-- article は、自己完結する記事を包む -->
+        <h1>記事見出し</h1>
+        <p>
+            記事内容
+        </p>
+    </article>
+</body>
+
+
+/**
+ * ページ内に1つの記事があり、その内容がテーマ分けされているケース
+ * @example
+ */
+<body>
+    <article>
+        <!-- article は、自己完結する記事を包む -->
+        <h1>記事見出し</h1>
+        <p>
+            記事全体に関する内容
+        </p>
+
+        <section>
+            <!-- 記事をテーマ別に分けてまとめたものを section で包む -->
+            <h2>項目1見出し</h2>
+            <p>
+                項目1記事
+            </p>
+        </section>
+
+        <section>
+            <h2>項目2見出し</h2>
+            <p>
+                項目2記事
+            </p>
+        </section>
+
+        <aside>
+            <!-- メインではない「余談」「補足」「サイドバー」「広告エリア」「検索フォーム」等を包む -->
+            <h2>補足記事見出し</h2>
+            <p>
+                補足記事
+            </p>
+        </aside>
+    </article>
+</body>
+
+
+/**
+ * ページ内に記事が複数並んでいるケース
+ * @example
+ */
+<body>
+    <article>
+        <h1>記事1見出し</h1>
+        <p>
+            記事1内容
+        </p>
+    </article>
+    <article>
+        <h1>記事2見出し</h1>
+        <p>
+            記事2内容
+        </p>
+    </article>
+    <article>
+        <h1>記事3見出し</h1>
+        <p>
+            記事3内容
+        </p>
+    </article>
+</body>
+
+
+/**
+ * その他のセクション系タグ使用例
+ * @example
+ */
+ <body>
+    <header>
+        <!-- ヘッダー領域 -->
+        <h1>ページタイトル</h1>
+        <p>
+            サブタイトル/ページの概要
+        </p>
+        <nav>
+            <h2>ナビゲーション</h2>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">facebook</a></li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">ブログ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav>
+        <!-- パンくずリスト -->
+        <ul>
+            <li><a href="">HOME</a></li> /
+            <li><a href="">親ページ</a></li> /
+            <li>現在ページ</li>
+        </ul>
+    </nav>
+
+    <article>
+        <!-- メインコンテンツ -->
+        <h2>記事タイトル</h2>
+        <p>
+            記事内容
+        </p>
+
+        <footer>
+            <p>
+                <a href="#top">この記事の先頭へ</a>
+            </p>
+        </footer>
+    </article>
+
+    <footer>
+        <!-- フッター -->
+        <p>
+            2016(C) fromearth
+        </p>
+    </footer>
+ </body>

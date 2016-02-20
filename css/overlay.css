@@ -1,0 +1,21 @@
+/**
+ * オーバーレイ
+ *
+ * @filename overlay.css
+ * @category Css
+ * @package  CssOverlay
+ * @author   fromearth
+ * @link     https://github.com/fromearth
+ */
+
+
+#overlay {
+    z-index: 101;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    background-color: rgba(0,0,0,0.75);
+}

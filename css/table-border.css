@@ -1,0 +1,33 @@
+/**
+ * テーブルの枠を定義
+ *
+ * @filename table-border.css
+ * @category Css
+ * @package  CssTableBorder
+ * @author   fromearth
+ * @link     https://github.com/fromearth
+ */
+
+
+
+/* テーブル枠を定義する */
+table {
+    border-collapse: separate;  /* 境界線を分離 */
+    border-spacing: 10px 4px;   /* セル同士の間隔指定 */
+}
+table, th, td {
+    border: 1px solid Black;    /* 枠線 */
+}
+
+
+
+/* できるだけスペースを無くしてコンパクトにする定義 */
+table {
+    border-collapse: collapse;  /* 境界線を結合 */
+}
+th, td {
+    padding: 0;
+}
+table, th, td {
+    border: 1px solid Black;    /* 枠線 */
+}

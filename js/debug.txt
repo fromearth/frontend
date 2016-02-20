@@ -1,0 +1,23 @@
+/**
+ * JavaScriptのデバッグ方法
+ *
+ * @filename debug.txt
+ * @category Js
+ * @package  JsDebug
+ * @author   fromearth
+ * @link     https://github.com/fromearth
+ */
+
+
+// ブラウザF12キーを押し、開発者ツールを起動
+Sources Resources Console 等に、赤字エラーが出ていないことを確認する
+
+
+// コンソールへ出力
+console.log(mixed)
+console.log("DEBUG DATA) %s", string);
+console.log("DEBUG DATA) %s", JSON.stringify(mixed));
+
+
+// データを文字列に変換
+JSON.stringify(mixed)

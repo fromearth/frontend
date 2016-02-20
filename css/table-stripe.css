@@ -1,0 +1,23 @@
+/**
+ * ストライプテーブル
+ *
+ * @filename table-stripe.css
+ * @category Css
+ * @package  CssTableStripe
+ * @author   fromearth
+ * @link     https://github.com/fromearth
+ */
+
+
+/* 奇数行の背景色 */
+table.stripe > tbody > tr:nth-child(odd) th,
+table.stripe > tbody > tr:nth-child(odd) td {
+    background-color: Lavender;
+}
+
+/* 偶数行の背景色 */
+table.stripe > tbody > tr:nth-child(even) th,
+table.stripe > tbody > tr:nth-child(even) td {
+    background-color: White;
+}
+

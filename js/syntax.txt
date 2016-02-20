@@ -1,0 +1,46 @@
+/**
+ * JavaScript構文
+ *
+ * @filename syntax.txt
+ * @category Js
+ * @package  JsSyntax
+ * @author   fromearth
+ * @link     https://github.com/fromearth
+ */
+
+
+/**
+ * 数字添え字の配列を扱う
+ */
+// 空の配列
+var ary = [];
+
+// 要素を追加
+ary.push('foo');
+
+// 配列のサイズ（要素数）
+ary.length
+
+
+
+/**
+ * オブジェクト
+ */
+// 初期化
+var obj = {};     // 空のオブジェクト
+var obj = {foo:"001", bar:"abc", fuga:99};  // 宣言時に要素セット
+
+// 要素を追加
+obj["foo"] = "002";
+  または
+obj.foo = "002";
+
+// ループ処理
+for (var key in obj) {
+    console.log(obj[key]);
+}
+
+// キーの存在チェック
+if (obj["foo"] === undefined)
+
+

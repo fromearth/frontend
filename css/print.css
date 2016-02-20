@@ -1,0 +1,25 @@
+/**
+ * 印刷用css定義
+ *
+ * @filename print.css
+ * @category Css
+ * @package  CssPrint
+ * @author   fromearth
+ * @link     https://github.com/fromearth
+ */
+
+@media print {
+    /* 印刷用のcss定義 */
+    @page {
+        /* ページボックス定義 */
+        size: portrait; /* 用紙方向を縦長に。横長：landscape */
+    }
+    body {
+        width: 916px;
+    }
+    .btn-print {
+        /* 印刷ボタンを印刷時に消す */
+        /* <input type="button" value="印刷する" class="btn-print" onClick="window.print();"> */
+        display: none;
+    }
+}

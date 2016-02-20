@@ -1,0 +1,146 @@
+<!-- 基本フォーム -->
+<form>
+    <div class="form-group">
+        <!-- input[type=text|password] -->
+        <label for="email">メールアドレス</label>
+        <input type="text" class="form-control" id="email" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <!-- input[type=file] -->
+        <label for="file">ファイルアップロード</label>
+        <input type="file" id="file">
+    </div>
+    <div class="checkbox">
+        <!-- input[type=checkbox] -->
+        <label>
+            <input type="checkbox"> foo
+        </label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+
+
+<!-- インラインフォーム / コンパクト表示できるようラベルはsr-onlyを加えて非表示にしてもよい -->
+<form class="form-inline">
+    <div class="form-group">
+        <!-- input[type=text|password] -->
+        <label class="sr-only" for="email">メールアドレス</label>
+        <input type="text" class="form-control" id="email" placeholder="Email">
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox"> foo
+        </label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+
+
+<!-- ラベルと入力要素を水平に並べる形 -->
+<form class="form-horizontal">
+    <div class="form-group">
+        <label for="email" class="col-xs-2 control-label">Email</label>
+        <div class="col-xs-10">
+            <input type="text" class="form-control" id="email" placeholder="Email">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="password" class="col-xs-2 control-label">Password</label>
+        <div class="col-xs-10">
+            <input type="password" class="form-control" id="password" placeholder="Password">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-xs-offset-2 col-xs-10">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> foo
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-xs-offset-2 col-xs-10">
+            <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+    </div>
+</form>
+
+
+
+<!-- テキストエリア -->
+<textarea class="form-control" rows="3"></textarea>
+
+
+<!-- チェックボックス -->
+<div class="checkbox">
+    <label>
+        <input type="checkbox" value=""> foo
+    </label>
+</div>
+<div class="checkbox disabled">
+    <!-- 非活性チェックボックス -->
+    <label>
+        <input type="checkbox" value="" disabled> bar
+    </label>
+</div>
+
+<!-- チェックボックス（inline） -->
+<label class="checkbox-inline">
+    <input type="checkbox" value="1"> foo
+</label>
+<label class="checkbox-inline">
+    <input type="checkbox" value="2"> bar
+</label>
+
+
+<!-- ラジオボタン -->
+<div class="radio">
+    <!-- 初期選択ラジオボタン -->
+    <label>
+        <input type="radio" name="foo" value="1" checked> foo
+    </label>
+</div>
+<div class="radio">
+    <label>
+        <input type="radio" name="foo" value="2"> bar
+    </label>
+</div>
+<div class="radio disabled">
+    <!-- 非活性ラジオボタン -->
+    <label>
+        <input type="radio" name="foo" value="3" disabled> fuga
+    </label>
+</div>
+
+
+<!-- ラジオボタン（inline） -->
+<label class="radio-inline">
+    <input type="radio" name="radio1" value="1"> foo
+</label>
+<label class="radio-inline">
+    <input type="radio" name="radio1" value="2"> bar
+</label>
+
+
+
+<!-- セレクトボックス -->
+<select class="form-control">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+</select>
+
+
+
+<!-- 入力不可要素 -->
+<form class="form-horizontal">
+    <div class="form-group">
+        <label class="col-xs-2 control-label">Email</label>
+        <div class="col-xs-10">
+            <p class="form-control-static">foo@example.com</p>
+        </div>
+    </div>
+</form>
